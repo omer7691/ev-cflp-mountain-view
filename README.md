@@ -21,13 +21,15 @@ Facility Location Problem (CFLP) formulation solved with Google OR-Tools SCIP.
 
 ## Repository Structure
 
+```
 ev-cflp-mountain-view/
-├── ev_cflp_mountain_view.ipynb   ← Full pipeline notebook
-├── environment.yml               ← Conda environment
+├── ev_cflp_mountain_view.ipynb    ← Full pipeline notebook
+├── environment.yml                ← Conda environment
 ├── data/
-│   ├── README.md                 ← Data dictionary
-│   └── processed/                ← Processed input data CSVs
-└── results/                      ← Solution and analysis output CSVs
+│   ├── README.md                  ← Data dictionary
+│   └── processed/                 ← Processed input data CSVs
+└── results/                       ← Solution and analysis output CSVs
+```
 
 ## Reproducing Results
 
