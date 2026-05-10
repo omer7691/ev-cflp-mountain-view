@@ -1,0 +1,5 @@
+delta,travel_cost,served,dist_H,dist_nonH,dist_gap,status,solve_time
+Unconstrained,2513.26,79,0.4,0.588,-0.187,Optimal,11.3
+delta=0.2,2513.26,79,0.4,0.588,-0.187,Optimal,10.7
+delta=0.1,2513.26,79,0.4,0.588,-0.187,Optimal,10.4
+delta=0.0,2513.26,79,0.4,0.588,-0.187,Optimal,9.7

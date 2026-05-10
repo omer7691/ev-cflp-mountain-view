@@ -1,0 +1,4 @@
+r_km,served,served_pct,travel_cost,avg_dist_km,valid_pairs,status
+2.0,79,100.0,2517.23,0.471,16488,Optimal
+3.0,79,100.0,2513.26,0.471,30997,Optimal
+5.0,79,100.0,2513.26,0.471,53167,Optimal
