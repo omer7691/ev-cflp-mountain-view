@@ -90,7 +90,7 @@ jupyter notebook ev_cflp_mountain_view.ipynb
 If you use this code or data, please cite:
 
 Toledo, O. (2026). Electric Vehicle Charging Station Placement:
-A Capacitated Facility Location Approach. Working paper.
+A Capacitated Facility Location Approach. 
 GitHub: https://github.com/omer7691/ev-cflp-mountain-view
 
 
