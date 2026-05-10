@@ -46,7 +46,7 @@ ev-cflp-mountain-view/
 ### Option 2: Local environment
 
 ```bash
-git clone https://github.com/[your-username]/ev-cflp-mountain-view.git
+git clone https://github.com/omer7691/ev-cflp-mountain-view.git
 cd ev-cflp-mountain-view
 conda env create -f environment.yml
 conda activate ev-cflp
