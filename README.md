@@ -46,7 +46,7 @@ ev-cflp-mountain-view/
 ### Option 2: Local environment
 
 ```bash
-git clone https://github.com/omer7691/ev-cflp-mountain-view.git
+git clone https://github.com/otoledo1/ev-cflp-mountain-view.git
 cd ev-cflp-mountain-view
 conda env create -f environment.yml
 conda activate ev-cflp
@@ -91,6 +91,6 @@ If you use this code or data, please cite:
 
 Toledo, O. (2026). Electric Vehicle Charging Station Placement:
 A Capacitated Facility Location Approach. 
-GitHub: https://github.com/omer7691/ev-cflp-mountain-view
+GitHub: https://github.com/otoledo1/ev-cflp-mountain-view
 
 
