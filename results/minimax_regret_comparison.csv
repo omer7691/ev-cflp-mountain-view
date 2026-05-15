@@ -1,0 +1,3 @@
+Scenario,Best* cost,x*_A cost,x*_A regret,x*_A regret %,x*_MM cost,x*_MM regret,x*_MM regret %
+Baseline (10% uniform stock),2513.26,2513.26,0.0,0.0,5126.56,2613.29,104.0
+Tenure-weighted need (Scenario B),6290.77,9160.79,2870.02,45.6,11604.75,5313.99,84.5
