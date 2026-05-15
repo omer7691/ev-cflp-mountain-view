@@ -101,6 +101,24 @@ Same columns as Mountain_View_CFLP_solution.csv.
 Full results of the six-scenario stochastic demand analysis including
 best-case costs, Scenario A evaluation costs, and regret values.
 
+### minimax_regret_comparison.csv
+Regret comparison between the Scenario A solution (x*_A) and the attempted
+minimax-regret solution (x*_MM) across S1 (baseline) and S3 (tenure-weighted)
+scenarios. Note: the minimax-regret MILP did not produce a meaningful feasible
+solution within the 300-second solver budget; x*_MM results reflect a solver
+artifact and should not be interpreted as a true minimax solution.
+
+| Column | Type | Description |
+|--------|------|-------------|
+| Scenario | string | Scenario label |
+| Best* cost | float | Scenario-optimal travel cost (EV-vehicle·km) |
+| x*_A cost | float | Scenario A solution evaluated under this scenario |
+| x*_A regret | float | Regret of x*_A (x*_A cost − Best* cost) |
+| x*_A regret % | float | Regret as % of Best* cost |
+| x*_MM cost | float | Minimax solution evaluated under this scenario |
+| x*_MM regret | float | Regret of x*_MM |
+| x*_MM regret % | float | x*_MM regret as % of Best* cost |
+
 ### Mountain_View_equity_results.csv
 Equity-constrained MILP results for varying delta values (0.0, 0.1, 0.2).
 All constraints non-binding — no efficiency-equity trade-off exists.
