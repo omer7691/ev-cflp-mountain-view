@@ -1,7 +1,0 @@
-Scenario,Total demand,Best* travel cost,Best* served,ScenA travel cost,ScenA served,Regret,Best* status
-Baseline (10% uniform stock),5339.4,2513.3,79,2513.3,79,0.0,Optimal
-High adoption (20% stock),10678.8,7115.3,69,8076.8,65,961.5,Feasible
-Tenure-weighted need (Scenario B),10518.1,6289.8,70,9160.8,68,2871.0,Feasible
-"Apartment-heavy (renters 50%, owners 3%)",15896.7,15949.2,44,10566.0,41,-5383.2,Feasible
-Equity-growth (HCVI-weighted),8510.4,4945.3,79,5448.3,79,503.0,Feasible
-Commute-heavy (downtown proximity × renter),3336.7,1116.6,78,1270.5,79,153.9,Optimal

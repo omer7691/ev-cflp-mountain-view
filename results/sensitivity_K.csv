@@ -1,5 +1,0 @@
-K,served,served_pct,travel_cost,avg_dist_km,avg_load,load_pct,status
-15,79,100.0,2925.37,0.548,356.0,71.2,Optimal
-20,79,100.0,2513.26,0.471,267.0,53.4,Optimal
-25,79,100.0,2211.47,0.414,213.6,42.7,Optimal
-30,79,100.0,2011.99,0.377,178.0,35.6,Optimal
