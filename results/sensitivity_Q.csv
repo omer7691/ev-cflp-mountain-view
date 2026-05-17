@@ -1,0 +1,4 @@
+Q,served,served_pct,travel_cost,avg_dist_km,avg_load,load_pct,status
+300,79,100.0,4245.45,0.795,267.0,89.0,Feasible
+500,79,100.0,2513.26,0.471,267.0,53.4,Optimal
+750,79,100.0,2513.26,0.471,267.0,35.6,Optimal
