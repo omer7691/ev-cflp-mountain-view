@@ -75,7 +75,8 @@ Feasibility tier classification for all 792 candidate sites.
 
 ### Mountain_View_CFLP_solution.csv
 MILP-optimal 20-station solution under Scenario A (uniform 10% adoption).
-Proven optimal in 10.4 seconds. Serves all 79 block groups.
+Proven optimal in 4.54 seconds (Apple Silicon) / ~21 seconds (Google Colab).
+Serves all 79 block groups.
 
 | Column | Type | Description |
 |--------|------|-------------|
@@ -94,12 +95,44 @@ Same columns as Mountain_View_CFLP_solution.csv.
 
 ### Mountain_View_heuristic_solution.csv
 Coverage-first greedy + simulated annealing heuristic solution.
-Serves all 79 block groups. 1.6% worse than optimal. Solved in 55 seconds.
+Serves all 79 block groups. 1.1% worse than optimal. Solved in 55 seconds.
 Same columns as Mountain_View_CFLP_solution.csv.
 
 ### Mountain_View_scenario_analysis.csv
 Full results of the six-scenario stochastic demand analysis including
 best-case costs, Scenario A evaluation costs, and regret values.
+
+### Mountain_View_queueing_results.csv
+Station-level queueing metrics for the MILP Scenario A solution under the M/M/m
+Erlang C model with m=6 ports and μ=1.0 session/port/hour.
+
+| Column | Type | Description |
+|--------|------|-------------|
+| site_id | string | Station identifier |
+| stn_demand | float | Total EV demand assigned to station (units) |
+| lambda_j | float | Peak-hour arrival rate (sessions/hour) |
+| rho_per_port | float | Per-port utilization ρ = λ / (mμ) |
+| P_wait | float | Erlang C probability of waiting on arrival |
+| W_q_minutes | float | Expected wait time in queue (minutes) |
+| overload_risk | bool | True if ρ ≥ 1.0 (unstable queue) |
+
+### queueing_sensitivity_m.csv
+Queueing summary statistics across port-count sensitivity (m = 4, 6, 8).
+
+| Column | Type | Description |
+|--------|------|-------------|
+| m | int | Number of charging ports per station |
+| mean_rho | float | Mean per-port utilization across all 20 stations |
+| max_rho | float | Maximum per-port utilization |
+| mean_P_wait | float | Mean P(wait) across stations |
+| max_P_wait | float | Maximum P(wait) |
+| mean_Wq_min | float | Mean expected wait time (minutes) |
+| overloaded_stations | int | Stations with ρ ≥ 1.0 |
+
+### Mountain_View_queueing_results_B.csv
+Station-level queueing metrics for the MILP Scenario B (tenure-weighted demand)
+solution. All 20 stations exhibit ρ > 1.0 (unstable) under this demand model.
+Same columns as Mountain_View_queueing_results.csv.
 
 ### minimax_regret_comparison.csv
 Regret comparison between the Scenario A solution (x*_A) and the attempted
