@@ -134,6 +134,26 @@ Station-level queueing metrics for the MILP Scenario B (tenure-weighted demand)
 solution. All 20 stations exhibit ρ > 1.0 (unstable) under this demand model.
 Same columns as Mountain_View_queueing_results.csv.
 
+### Mountain_View_reliability_outage.csv
+Single-station outage analysis for all 20 MILP-selected stations. Each row reports
+the impact of taking that station fully offline, with demand greedily reassigned to
+the nearest remaining open station with available capacity.
+
+| Column | Type | Description |
+|--------|------|-------------|
+| site_id | string | Station identifier |
+| stn_demand | float | Demand assigned to station in baseline solution (EV units) |
+| bg_served_baseline | int | Block groups served in baseline (always 79) |
+| bg_unserved_outage | int | Block groups losing service when this station goes offline |
+| demand_at_risk | float | Station's assigned demand (EV units) |
+| unserved_demand | float | Demand left unserved after outage and reassignment |
+| travel_cost_outage | float | Total network travel cost after reassignment (EV-vehicle·km) |
+| travel_cost_delta | float | Travel cost increase vs baseline of 2,513.26 EV-vehicle·km |
+| avg_dist_outage | float | Average assignment distance after outage (km) |
+| bg_no_backup | int | Block groups with no alternative open station within 3 km |
+| bg_with_backup | int | Block groups rerouted to a backup station |
+| is_critical | bool | True if any block group has no backup (bg_no_backup > 0) |
+
 ### minimax_regret_comparison.csv
 Regret comparison between the Scenario A solution (x*_A) and the attempted
 minimax-regret solution (x*_MM) across S1 (baseline) and S3 (tenure-weighted)
