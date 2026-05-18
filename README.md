@@ -98,9 +98,10 @@ Open in VS Code with the Jupyter extension and select the **EV CFLP** kernel. Fu
 | 11 | Sensitivity grid — K, Q, r, adoption rate |
 | 12 | Stochastic demand analysis — 6 scenarios, regret, CVaR_0.90, site stability |
 | 13 | Queueing / wait-time model — M/M/m Erlang C, port sensitivity, Scenario B stress test |
-| 14 | Minimax-regret analysis — attempted; exceeds solver budget at this instance scale |
-| 15 | Interactive solution maps (Folium) |
-| 16 | File verification + ZIP download |
+| 14 | Reliability analysis — single-station outage scenarios, redundancy metrics |
+| 15 | Minimax-regret analysis — attempted; exceeds solver budget at this instance scale |
+| 16 | Interactive solution maps (Folium) |
+| 17 | File verification + ZIP download |
 
 ## Data Sources
 
