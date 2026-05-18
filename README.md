@@ -13,7 +13,9 @@ This repository contains the full reproducible pipeline for optimizing public EV
 - No efficiency-equity trade-off: high-vulnerability block groups served at shorter distances
 - No stable-core sites robust across all six demand scenarios; 11 moderate-stability sites appear in 3–4 of 6 scenario-optimal solutions
 - Queueing analysis (M/M/m Erlang C, m=6 ports): mean utilization 39.7%, mean expected wait 1.45 min under baseline demand
+- Network fully resilient to any single-station outage: all 79 block groups retain service; worst-case failure (J446) increases travel cost by 12.6%
 - Minimax-regret formulation attempted; did not converge within 300-second solver budget at this instance scale
+
 
 ## Repository Structure
 
